@@ -1,0 +1,43 @@
+// Подключение шрифтов
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:regular,600,700&display=swap&subset=cyrillic-ext);
+@import "fonts";
+
+// Сброс стилей
+@import "reset";
+
+// Шрифт по умолчанию
+$fontFamily: "Nunito Sans";
+
+// Переменные
+$minWidth: 320;
+$maxWidth: 1920;
+$maxWidthContainer: 1264;
+$md1: maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+html {
+    font-size: 10px;
+}
+body {
+    font-family: $fontFamily;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+@import "header";
+
+// Основной контейнер
+._container {
+    max-width: $maxWidthContainer + px;
+    margin: 0 auto;
+}
+
+
